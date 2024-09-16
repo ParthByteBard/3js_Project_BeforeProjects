@@ -4,7 +4,7 @@
 
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { Float, useGLTF, useTexture } from '@react-three/drei';
 
 const Cube = ({ ...props }) => {
@@ -31,9 +31,19 @@ const Cube = ({ ...props }) => {
       });
   });
 
+  // Only modify the position after targetRef is assigned
+  useEffect(() => {
+    if (cubeRef.current && props.isMobile) {
+      cubeRef.current.position.y = -2;
+      cubeRef.current.position.x = -1;
+
+
+    }
+  }, [props.isMobile]); // run effect when `isMobile` changes
+
   return (
     <Float floatIntensity={2}>
-      <group position={[9, -4, 0]} rotation={[2.6, 0.8, -1.8]} scale={0.74} dispose={null} {...props}>
+      <group position={[15, -5, 1]} rotation={[2.6, 0.8, -1.8]} scale={0.74} dispose={null} {...props}>
         <mesh
           ref={cubeRef}
           castShadow

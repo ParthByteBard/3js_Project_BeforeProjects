@@ -1,3 +1,23 @@
+// Contains the constant data like client reviews,projects etc
+// exported into the section we need it
+// You need to modify these
+
+
+
+import cpp from '../assets2/tech/cpp.png';
+import c from '../assets2/tech/c.jpeg';
+import python from '../assets2/tech/python.webp'
+import javascript from '../assets2/tech/javascript.png'
+import html from '../assets2/tech/html.png';
+import css from '../assets2/tech/css.png';
+import reactjs from '../assets2/tech/reactjs.png';
+import tailwind from '../assets2/tech/tailwind.png';
+import nodejs from '../assets2/tech/nodejs.png';
+import git from '../assets2/tech/git.png';
+import School from '/public/assets/School.png'
+import School2 from '/public/assets/school2.png';
+import VIT from '/public/assets/vitLogo.jpeg'
+
 export const navLinks = [
   {
     id: 1,
@@ -21,39 +41,47 @@ export const navLinks = [
   },
 ];
 
-export const clientReviews = [
+export const technologies = [
   {
-    id: 1,
-    name: 'Emily Johnson',
-    position: 'Marketing Director at GreenLeaf',
-    img: 'assets/review1.png',
-    review:
-      'Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
+    name: "HTML 5",
+    icon: html,
   },
   {
-    id: 2,
-    name: 'Mark Rogers',
-    position: 'Founder of TechGear Shop',
-    img: 'assets/review2.png',
-    review:
-      'Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
+    name: "CSS 3",
+    icon: css,
   },
   {
-    id: 3,
-    name: 'John Dohsas',
-    position: 'Project Manager at UrbanTech ',
-    img: 'assets/review3.png',
-    review:
-      'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
+    name: "JavaScript",
+    icon: javascript,
   },
   {
-    id: 4,
-    name: 'Ether Smith',
-    position: 'CEO of BrightStar Enterprises',
-    img: 'assets/review4.png',
-    review:
-      'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
+    name: "Cpp",
+    icon: cpp,
   },
+  {
+    name: 'c',
+    icon: c,
+  },
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
+    name: "Node JS",
+    icon: nodejs,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "git",
+    icon: git,
+  }
 ];
 
 export const myProjects = [
@@ -85,7 +113,7 @@ export const myProjects = [
       {
         id: 3,
         name: 'TypeScript',
-        path: '/assets/typescript.png',
+        path: '../assets2/tech/nodesjs.png',
       },
       {
         id: 4,
@@ -246,6 +274,8 @@ export const myProjects = [
   },
 ];
 
+// These are the sizes and scale of the hacker-room elements calculated according to
+// the size of the display
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
   return {
     deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.065,
@@ -257,32 +287,37 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
   };
 };
 
-export const workExperiences = [
+export const experiences = [
   {
-    id: 1,
-    name: 'Framer',
-    pos: 'Lead Web Developer',
-    duration: '2022 - Present',
-    title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-    icon: '/assets/framer.svg',
-    animation: 'victory',
+    title: "10th CBSE",
+    company_name: "Atomic Energy Central School 6, BARC colony, Mumbai",
+    icon: School,
+    iconBg: "#383E56",
+    date: "( 2019-2020 )",
+    points: [
+      "Passed out with 95.8% aggregate",
+    ],
   },
   {
-    id: 2,
-    name: 'Figma',
-    pos: 'Web Developer',
-    duration: '2020 - 2022',
-    title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-    icon: '/assets/figma.svg',
-    animation: 'clapping',
+    title: "12th CBSE",
+    company_name: "Ryan International School, Sanpada, Navi-Mumbai",
+    icon: School2,
+    iconBg: "#E6DEDD",
+    date: "( 2021-2022 )",
+    points: [
+      "Passed out with 90% aggregate",
+    ],
   },
   {
-    id: 3,
-    name: 'Notion',
-    pos: 'Junior Web Developer',
-    duration: '2019 - 2020',
-    title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-    icon: '/assets/notion.svg',
-    animation: 'salute',
+    title: "Btech Computer Engineering",
+    company_name: "Vidyalankar Institute of Technology,Wadala, Mumbai",
+    icon: VIT,
+    iconBg: "#383E56",
+    date: "( 2022-2026 )",
+    points: [
+      "Present",
+    ],
   },
 ];
+
+

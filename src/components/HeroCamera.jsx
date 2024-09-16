@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { easing } from 'maath';
 
+// for giving that moving effect to model with the cursor
 const HeroCamera = ({ isMobile, children }) => {
   const group = useRef();
 
@@ -13,7 +14,7 @@ const HeroCamera = ({ isMobile, children }) => {
     }
   });
 
-  return <group ref={group}>{children}</group>;
+  return <group ref={group} scale={isMobile ? 0.9 : 1.2}> {children}</group >;
 };
 
 export default HeroCamera;

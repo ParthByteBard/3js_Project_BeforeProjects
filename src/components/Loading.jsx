@@ -19,8 +19,12 @@ const CanvasLoader = () => {
           color: '#F1F1F1',
           fontWeight: 800,
           marginTop: 40,
+          whiteSpace: 'nowrap',
+          textAlign: 'center'
         }}>
-        {progress !== 0 ? `${progress.toFixed(2)}%` : 'Loading...'}
+        {progress !== 0 ? `${progress.toFixed()}% ` : 'Loading...'}
+        <br />
+        <span className='inline-block'>3D-Model&nbsp;Loading...</span>
       </p>
     </Html>
   );

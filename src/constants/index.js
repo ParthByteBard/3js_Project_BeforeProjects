@@ -108,17 +108,17 @@ export const myProjects = [
       {
         id: 2,
         name: 'CSS',
-        path: './src/assets2/tech/css.png',
+        path: '/assets/css.png',
       },
       {
         id: 3,
         name: 'HTML',
-        path: './src/assets2/tech/html.png',
+        path: '/assets/html.png',
       },
       {
         id: 4,
         name: 'JavaScript',
-        path: './src/assets2/tech/javascript.png',
+        path: '/assets/javascript.png',
       },
     ],
   },
@@ -139,17 +139,17 @@ export const myProjects = [
       {
         id: 2,
         name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
+        path: '/assets/tailwindcss.png',
       },
       {
         id: 3,
         name: 'Node.js',
-        path: './src/assets2/tech/nodejs.png',
+        path: '/assets/nodejs.png',
       },
       {
         id: 4,
         name: 'JavaScript',
-        path: './src/assets2/tech/javascript.png',
+        path: '/assets/javascript.png',
       },
     ],
   },
@@ -178,12 +178,12 @@ export const myProjects = [
       {
         id: 2,
         name: 'CSS',
-        path: './src/assets2/tech/css.png',
+        path: '/assets/css.png',
       },
       {
         id: 4,
         name: 'JavaScript',
-        path: './src/assets2/tech/javascript.png',
+        path: '/assets/javascript.png',
       },
     ],
   },
@@ -205,17 +205,17 @@ export const myProjects = [
       {
         id: 1,
         name: 'CSS',
-        path: './src/assets2/tech/css.png',
+        path: '/assets/css.png',
       },
       {
         id: 2,
         name: 'HTML',
-        path: './src/assets2/tech/html.png',
+        path: '/assets/html.png',
       },
       {
         id: 3,
         name: 'JavaScript',
-        path: './src/assets2/tech/javascript.png',
+        path: '/assets/javascript.png',
       },
     ],
   },

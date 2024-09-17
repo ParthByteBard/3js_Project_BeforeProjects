@@ -3,6 +3,8 @@ import { useRef, useState } from 'react';
 
 import useAlert from '../hooks/useAlert.js';
 import Alert from '../components/Alert.jsx';
+// service id: service_v5klt85
+// template id: template_u08l1rj
 
 const Contact = () => {
   const formRef = useRef();
@@ -20,19 +22,18 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: 'JavaScript Mastery',
-          from_email: form.email,
-          to_email: 'sujata@jsmastery.pro',
-          message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
-      )
+    emailjs.send(
+      'service_v5klt85',
+      'template_at16gtc',
+      {
+        from_name: form.name,
+        to_name: 'Parth Satvekar',
+        from_email: form.email,
+        to_email: 'parth.satvekar.official@gmail.com',
+        message: form.message,
+      },
+      'qsdt0hOXCto_7PQEI',
+    )
       .then(
         () => {
           setLoading(false);

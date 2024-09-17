@@ -31,8 +31,8 @@ export const navLinks = [
   },
   {
     id: 3,
-    name: 'Work',
-    href: '#work',
+    name: 'Projects',
+    href: '#project',
   },
   {
     id: 4,
@@ -86,13 +86,13 @@ export const technologies = [
 
 export const myProjects = [
   {
-    title: 'Podcastr - AI Podcast Platform',
-    desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
+    title: 'Freelancing Job Platform',
+    desc: 'A React-based platform where recruiters can post job listings, including details like job type, requirements, company info, and contact details. Applicants can browse all job listings, and updates are displayed via React Toastify. Data is stored on a dummy backend running on port 8000.',
     subdesc:
-      'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
-    href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+      'The project demonstrates React fundamentals, including data handling from a backend, and is styled with vanilla CSS for simplicity and clarity.',
+    href: 'https://drive.google.com/file/d/17T7P1qg_vQ1DEouOyMXgzPCHUZwsXbsA/view?usp=sharing',
     texture: '/textures/project/project1.mp4',
-    logo: '/assets/project-logo1.png',
+    // logo: '/assets/project-logo1.png',
     logoStyle: {
       backgroundColor: '#2A1816',
       border: '0.2px solid #36201D',
@@ -107,34 +107,28 @@ export const myProjects = [
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
+        name: 'CSS',
+        path: './src/assets2/tech/css.png',
       },
       {
         id: 3,
-        name: 'TypeScript',
-        path: '../assets2/tech/nodesjs.png',
+        name: 'HTML',
+        path: './src/assets2/tech/html.png',
       },
       {
         id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: 'JavaScript',
+        path: './src/assets2/tech/javascript.png',
       },
     ],
   },
   {
-    title: 'LiveDoc - Real-Time Google Docs Clone',
-    desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
+    title: 'Real-Time ChatRoom',
+    desc: 'A chat application built using Socket.io for full-duplex, real-time communication. Users can enter a username and room ID, and send messages in real-time to all participants in the room. The server broadcasts messages to everyone in the room, making it ideal for group chats.',
     subdesc:
-      'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-    href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
+      'The app is built with a React frontend styled using Tailwind CSS, and a Node.js + Express backend handles the server-side logic.',
+    href: 'https://drive.google.com/file/d/15Mrzi90O1ZlmA-pWVE91J9Grzx4kJrpe/view?usp=sharing',
     texture: '/textures/project/project2.mp4',
-    logo: '/assets/project-logo2.png',
-    logoStyle: {
-      backgroundColor: '#13202F',
-      border: '0.2px solid #17293E',
-      boxShadow: '0px 0px 60px 0px #2F6DB54D',
-    },
     spotlight: '/assets/spotlight2.png',
     tags: [
       {
@@ -149,22 +143,22 @@ export const myProjects = [
       },
       {
         id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
+        name: 'Node.js',
+        path: './src/assets2/tech/nodejs.png',
       },
       {
         id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: 'JavaScript',
+        path: './src/assets2/tech/javascript.png',
       },
     ],
   },
   {
-    title: 'CarePulse - Health Management System',
-    desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
+    title: 'Movie Search Tool',
+    desc: 'A React-based movie search application that integrates with the OMDB API to fetch movie data. Users can search for movies, and the app displays the results as cards with movie details like the title, release year, and poster image. If no poster is available, a placeholder image is used.',
     subdesc:
-      'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-    href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
+      'This project demonstrates fetching and handling API data and organizing it into a user-friendly card-based interface.',
+    href: 'https://drive.google.com/file/d/1SPlwF8u9gE7jgKhrh4zvjnlQP1mJ_TqX/view?usp=sharing',
     texture: '/textures/project/project3.mp4',
     logo: '/assets/project-logo3.png',
     logoStyle: {
@@ -183,27 +177,22 @@ export const myProjects = [
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
+        name: 'CSS',
+        path: './src/assets2/tech/css.png',
       },
       {
         id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: 'JavaScript',
+        path: './src/assets2/tech/javascript.png',
       },
     ],
   },
   {
-    title: 'Horizon - Online Banking Platform',
-    desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
+    title: 'Weather Forecast for Farmers',
+    desc: 'A fully responsive weather forecast tool designed for farmers, built with HTML, CSS, and JavaScript. It fetches weather data from the OpenWeather API and provides actionable advice to farmers based on the current weather conditions. The app analyzes the weather and suggests farming tasks like watering or protecting crops.',
     subdesc:
-      'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-    href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
+      'The project focuses on delivering critical weather information in a simplified and practical manner for agricultural use.',
+    href: 'https://drive.google.com/file/d/1K5APqoy3znytBjlYEdrtZ2-uhTqyLueT/view?usp=sharing',
     texture: '/textures/project/project4.mp4',
     logo: '/assets/project-logo4.png',
     logoStyle: {
@@ -215,60 +204,18 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
+        name: 'CSS',
+        path: './src/assets2/tech/css.png',
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
+        name: 'HTML',
+        path: './src/assets2/tech/html.png',
       },
       {
         id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
-      },
-    ],
-  },
-  {
-    title: 'Imaginify - AI Photo Manipulation App',
-    desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
-    subdesc:
-      'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
-    href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
-    texture: '/textures/project/project5.mp4',
-    logo: '/assets/project-logo5.png',
-    logoStyle: {
-      backgroundColor: '#1C1A43',
-      border: '0.2px solid #252262',
-      boxShadow: '0px 0px 60px 0px #635BFF4D',
-    },
-    spotlight: '/assets/spotlight5.png',
-    tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: 'JavaScript',
+        path: './src/assets2/tech/javascript.png',
       },
     ],
   },

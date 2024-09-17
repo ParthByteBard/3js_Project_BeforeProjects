@@ -18,6 +18,7 @@ import CanvasLoader from '../components/Loading.jsx'; // Loader component that s
 import HeroCamera from '../components/HeroCamera.jsx'; // Custom camera setup for the hero section
 import { calculateSizes } from '../constants/index.js'; // Function to calculate sizes for various 3D elements
 import { HackerRoom } from '../components/HackerRoom.jsx'; // Another 3D model component representing a room
+import TypewriterComponent from 'typewriter-effect';
 
 // Main Hero section
 const Hero = () => {

@@ -13,6 +13,19 @@ body {
   font-family: 'General Sans', sans-serif;
 }
 
+
+@keyframes blinkCursor {
+
+  from,
+  to {
+    visibility: hidden;
+  }
+
+  50% {
+    visibility: visible;
+  }
+}
+
 @layer utilities {
   .c-space {
     @apply sm:px-10 px-5;

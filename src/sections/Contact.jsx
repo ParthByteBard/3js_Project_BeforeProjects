@@ -115,7 +115,7 @@ const Contact = () => {
                 required
                 rows={5}
                 className="field-input"
-                placeholder="Share your thoughts or inquiries..."
+                placeholder="ex: We want to give you internship ..."
               />
             </label>
 

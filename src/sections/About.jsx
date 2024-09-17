@@ -26,7 +26,7 @@ const About = () => {
               <p className="grid-headtext mt-10">Hi, I'm Parth Satvekar</p>
               <p className="grid-subtext">
                 Studying as a 3rd Year, Computer Engineering Student at VIT Mumbai. I like coding and I
-                believe in continuos learning and trying to make myself 1% better everyday.
+                believe in continuos learning. Trying to make myself 1% better everyday.
               </p>
             </div>
           </div>
@@ -40,7 +40,7 @@ const About = () => {
             <div>
               <p className="grid-headtext mt-10">Core Principles</p>
               <p className="grid-subtext">
-                I am dedicated to the welfare of stray animals, treating everyone with respect, and maintaining unwavering loyalty to my work. These values guide me in both my professional and personal life, reflecting my commitment to making a positive impact with sincerity and integrity.
+                I am dedicated to the welfare of stray animals, treating everyone with respect, and maintaining unwavering loyalty to my work. These values guide me in both my professional and personal life.
               </p>
             </div>
           </div>

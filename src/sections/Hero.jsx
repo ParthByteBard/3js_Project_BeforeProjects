@@ -39,7 +39,22 @@ const Hero = () => {
         <p className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans">
           Hey, I am Parth <span className="waving-hand">🤝</span> {/* Waving hand emoji */}
         </p>
-        <p className="hero_tag text-gray_gradient">Learning & Building Projects</p> {/* Tagline in gradient text */}
+        <div className='relative p-4 sm:p-6 md:p-8 flex justify-center'>
+          <div className='text-3xl sm:text-4xl md:text-5xl font-semibold text-yellow-400'>
+            <TypewriterComponent
+              options={{
+                strings: ["Learning Tech", "Building Projects", "Improving myself"],
+                autoStart: true,
+                loop: true,
+                delay: 50,
+                deleteSpeed: 30,
+                pauseFor: 1000,
+                cursor: "|", // Customize cursor here
+              }}
+              className="typewriter-cursor"
+            />
+          </div>
+        </div>
       </div>
 
       {/* 3D scene container */}

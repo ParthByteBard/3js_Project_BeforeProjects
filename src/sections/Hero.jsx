@@ -21,6 +21,7 @@ import { HackerRoom } from '../components/HackerRoom.jsx'; // Another 3D model c
 import TypewriterComponent from 'typewriter-effect';
 
 // Main Hero section
+// removed ' fallback={<CanvasLoader />}' from suspense
 const Hero = () => {
   // Use media queries to check if the screen is small, mobile, or tablet size
   const isSmall = useMediaQuery({ maxWidth: 440 }); // Small screen, e.g., phones
@@ -56,42 +57,26 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
-      {/* 3D scene container */}
       <div className="w-full h-full absolute inset-0">
-        {/* Canvas from @react-three/fiber is the main renderer for 3D models */}
         <Canvas className="w-full h-full">
-          <Suspense fallback={<CanvasLoader />}> {/* Loading fallback while 3D models are fetched */}
-
-            {/* Leva control panel is hidden, it’s there for debugging or adjusting scene parameters */}
+          <Suspense>
             <Leva hidden />
-
-            {/* PerspectiveCamera sets up the camera view */}
             <PerspectiveCamera makeDefault position={[0, 0, 100]} />
-
-            {/* HeroCamera wraps the 3D components with special camera controls, adjusting based on screen size */}
             <HeroCamera isMobile={isMobile}>
-              {/* HackerRoom is a 3D model that appears in the scene */}
               <HackerRoom scale={sizes.deskScale} position={sizes.deskPosition} rotation={[0.1, -Math.PI, 0]} />
             </HeroCamera>
-
-            {/* A group of 3D elements placed in the scene with positions calculated dynamically */}
             <group>
-              <Target position={sizes.targetPosition} isMobile={isMobile} /> {/* Pass isMobile as prop */}
-              <ReactLogo position={sizes.reactLogoPosition} /> {/* React Logo 3D object */}
-              <Rings position={sizes.ringPosition} /> {/* Rings 3D object */}
-              <Cube position={sizes.cubePosition} isMobile={isMobile} /> {/* Pass isMobile as prop */}
+              <Target position={sizes.targetPosition} isMobile={isMobile} />
+              <ReactLogo position={sizes.reactLogoPosition} />
+              <Rings position={sizes.ringPosition} />
+              <Cube position={sizes.cubePosition} isMobile={isMobile} />
             </group>
-
-            {/* Lights in the scene */}
-            <ambientLight intensity={1} /> {/* Soft, global light */}
-            <directionalLight position={[10, 10, 10]} intensity={0.1} /> {/* Directional light from a specific position */}
-
+            <ambientLight intensity={1} />
+            <directionalLight position={[10, 10, 10]} intensity={0.1} />
           </Suspense>
         </Canvas>
       </div>
 
-      {/* Button for collaboration */}
       <div className="absolute bottom-2 left-0 right-0 w-full z-10 c-space">
         {/* Button that links to the contact section */}
         <a href="#contact" className="w-fit">

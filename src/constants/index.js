@@ -7,16 +7,16 @@
 import cpp from '../assets2/tech/cpp.png';
 import c from '../assets2/tech/c.jpeg';
 import python from '../assets2/tech/python.webp'
-import javascript from '../assets2/tech/javascript.png'
+import javascript from '../assets2/tech/cpp.png'
 import html from '../assets2/tech/html.png';
 import css from '../assets2/tech/css.png';
 import reactjs from '../assets2/tech/reactjs.png';
 import tailwind from '../assets2/tech/tailwind.png';
 import nodejs from '../assets2/tech/nodejs.png';
 import git from '../assets2/tech/git.png';
-import School from '/public/assets/School.png'
-import School2 from '/public/assets/school2.png';
-import VIT from '/public/assets/vitLogo.jpeg'
+import School from '../assets/School.png'
+import School2 from '../assets/school2.png';
+import VIT from '../assets/vitLogo.jpeg'
 
 export const navLinks = [
   {
@@ -52,7 +52,7 @@ export const technologies = [
   },
   {
     name: "JavaScript",
-    icon: javascript,
+    icon: cpp,
   },
   {
     name: "Cpp",

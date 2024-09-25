@@ -1,6 +1,7 @@
 import { useState } from 'react'; // React hook to manage state
 import { navLinks } from '../constants/index.js'; // Importing navigation links from constants
-
+import close from '../assets/close.svg'
+import menu from '../assets/menu.svg'
 // NavItems Component: Iterates through the navigation links and displays them as a list of items
 // onClick prop allows triggering any action (like closing the menu on mobile after clicking a link)
 const NavItems = ({ onClick = () => { } }) => (
@@ -46,7 +47,7 @@ const Navbar = () => {
             // if screen size atleast 640px or greater(i.e sm) it should be hidden I know its not logical
             className="text-neutral-400 hover:text-white focus:outline-none sm:hidden flex"
             aria-label="Toggle menu"> {/* Accessibility: aria-label describes the button */}
-            <img src={isOpen ? 'assets/close.svg' : 'assets/menu.svg'} alt="toggle" className="w-6 h-6" /> {/* Shows close or menu icon based on isOpen state */}
+            <img src={isOpen ? close : menu} alt="toggle" className="w-6 h-6" /> {/* Shows close or menu icon based on isOpen state */}
           </button>
 
           {/* Regular navigation menu (displayed on larger screens) */}

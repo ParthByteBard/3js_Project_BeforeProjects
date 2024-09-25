@@ -1,4 +1,8 @@
 // {Footer component: Link to github,linkedin & insta and copyright}
+
+import Insta from '../assets/instagram.svg'
+import Linked_in from '../assets/LinkedIn_Logo.webp'
+import GitHub from '../assets/github.svg'
 const Footer = () => {
   return (
     <footer className="c-space pt-7 pb-3 border-t border-black-300 flex justify-between items-center flex-wrap gap-5">
@@ -11,17 +15,17 @@ const Footer = () => {
       <div className="flex gap-3">
         <a href='https://github.com/ParthByteBard' target='_blank'>
           <div className="social-icon">
-            <img src="/assets/github.svg" alt="github" className="w-1/2 h-1/2" />
+            <img src={GitHub} alt="github" className="w-1/2 h-1/2" />
           </div>
         </a>
         <a href='https://www.linkedin.com/in/parth-satvekar/' target='_blank'>
           <div className="social-icon">
-            <img src="/assets/LinkedIn_Logo.webp" alt="twitter" className="w-1/2 h-1/2" />
+            <img src={Linked_in} alt="twitter" className="w-1/2 h-1/2" />
           </div>
         </a>
         <a href='https://www.instagram.com/parth_satvekar' target='_blank'>
           <div className="social-icon">
-            <img src="/assets/instagram.svg" alt="instagram" className="w-1/2 h-1/2" />
+            <img src={Insta} alt="instagram" className="w-1/2 h-1/2" />
           </div>
         </a>
 

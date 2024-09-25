@@ -7,7 +7,7 @@
 import cpp from '../assets2/tech/cpp.png';
 import c from '../assets2/tech/c.jpeg';
 import python from '../assets2/tech/python.webp'
-import javascript from '../assets2/tech/cpp.png'
+import javascript from '../assets2/tech/javascript.png'
 import html from '../assets2/tech/html.png';
 import css from '../assets2/tech/css.png';
 import reactjs from '../assets2/tech/reactjs.png';
@@ -17,6 +17,10 @@ import git from '../assets2/tech/git.png';
 import School from '../assets/School.png'
 import School2 from '../assets/school2.png';
 import VIT from '../assets/vitLogo.jpeg'
+import spotlight1 from '../assets/spotlight1.png'
+import spotlight2 from '../assets/spotlight2.png'
+import spotlight3 from '../assets/spotlight3.png'
+import spotlight4 from '../assets/spotlight4.png'
 
 export const navLinks = [
   {
@@ -52,7 +56,7 @@ export const technologies = [
   },
   {
     name: "JavaScript",
-    icon: cpp,
+    icon: javascript,
   },
   {
     name: "Cpp",
@@ -98,27 +102,27 @@ export const myProjects = [
       border: '0.2px solid #36201D',
       boxShadow: '0px 0px 60px 0px #AA3C304D',
     },
-    spotlight: '/assets/spotlight1.png',
+    spotlight: spotlight1,
     tags: [
       {
         id: 1,
         name: 'React.js',
-        path: '/assets/react.svg',
+        path: reactjs,
       },
       {
         id: 2,
         name: 'CSS',
-        path: '/assets/css.png',
+        path: css,
       },
       {
         id: 3,
         name: 'HTML',
-        path: '/assets/html.png',
+        path: html,
       },
       {
         id: 4,
         name: 'JavaScript',
-        path: '/assets/javascript.png',
+        path: javascript,
       },
     ],
   },
@@ -129,27 +133,27 @@ export const myProjects = [
       'The app is built with a React frontend styled using Tailwind CSS, and a Node.js + Express backend handles the server-side logic.',
     href: 'https://drive.google.com/file/d/15Mrzi90O1ZlmA-pWVE91J9Grzx4kJrpe/view?usp=sharing',
     texture: '/textures/project/project2.mp4',
-    spotlight: '/assets/spotlight2.png',
+    spotlight: spotlight2,
     tags: [
       {
         id: 1,
         name: 'React.js',
-        path: '/assets/react.svg',
+        path: reactjs,
       },
       {
         id: 2,
         name: 'TailwindCSS',
-        path: '/assets/tailwindcss.png',
+        path: tailwind,
       },
       {
         id: 3,
         name: 'Node.js',
-        path: '/assets/nodejs.png',
+        path: nodejs,
       },
       {
         id: 4,
         name: 'JavaScript',
-        path: '/assets/javascript.png',
+        path: javascript,
       },
     ],
   },
@@ -168,22 +172,22 @@ export const myProjects = [
       border: '0.2px solid rgba(208, 213, 221, 1)',
       boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
     },
-    spotlight: '/assets/spotlight3.png',
+    spotlight: spotlight3,
     tags: [
       {
         id: 1,
         name: 'React.js',
-        path: '/assets/react.svg',
+        path: reactjs,
       },
       {
         id: 2,
         name: 'CSS',
-        path: '/assets/css.png',
+        path: css,
       },
       {
         id: 4,
         name: 'JavaScript',
-        path: '/assets/javascript.png',
+        path: javascript,
       },
     ],
   },
@@ -200,22 +204,22 @@ export const myProjects = [
       border: '0.2px solid #0E2D58',
       boxShadow: '0px 0px 60px 0px #2F67B64D',
     },
-    spotlight: '/assets/spotlight4.png',
+    spotlight: spotlight4,
     tags: [
       {
         id: 1,
         name: 'CSS',
-        path: '/assets/css.png',
+        path: css,
       },
       {
         id: 2,
         name: 'HTML',
-        path: '/assets/html.png',
+        path: html,
       },
       {
         id: 3,
         name: 'JavaScript',
-        path: '/assets/javascript.png',
+        path: javascript,
       },
     ],
   },

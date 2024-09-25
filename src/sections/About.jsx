@@ -7,7 +7,7 @@ import grid2 from '../assets/images.jpeg'
 import grid4 from '../assets/grid4.png'
 import tick from '../assets/tick.svg'
 import copy from '../assets/copy.svg'
-import Earth2 from '../assets2/earth2.webp'
+
 
 
 const About = () => {
@@ -56,7 +56,7 @@ const About = () => {
         <div className="col-span-1 xl:row-span-4">
           <div className="grid-container flex flex-col sm:justify-start">
             <div className="rounded-3xl w-full sm:h-[450px] h-fit flex justify-center items-center">
-              {/* <Globe
+              <Globe
                 height={326}
                 width={326}
                 backgroundColor="rgba(0, 0, 0, 0)"
@@ -66,8 +66,7 @@ const About = () => {
                 globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
                 bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
                 labelsData={[{ lat: 40, lng: -100, text: 'Rjieka, Croatia', color: 'white', size: 15 }]}
-              /> */}
-              <img src={Earth2} />
+              />
             </div>
             <div >
               <p className="grid-headtext">I’m very flexible with time zone communications</p>

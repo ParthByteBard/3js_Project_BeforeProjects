@@ -7,7 +7,7 @@ import { Canvas } from '@react-three/fiber'; // Canvas is the main container for
 import { useMediaQuery } from 'react-responsive'; // Hook to handle responsive design by checking screen width
 
 import { PerspectiveCamera } from '@react-three/drei'; // A ready-to-use perspective camera for 3D scenes
-import { isWebGLAvailable } from 'three/examples/jsm/capabilities/WebGL.js';
+
 
 
 
@@ -31,9 +31,7 @@ const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 }); // Mobile devices
   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 }); // Tablets
 
-  if (!isWebGLAvailable()) {
-    alert('WebGL is not supported on your device.');
-  }
+
   // Calculate size properties based on the screen size
   const sizes = calculateSizes(isSmall, isMobile, isTablet);
 

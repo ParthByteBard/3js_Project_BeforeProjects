@@ -21,6 +21,11 @@ import spotlight1 from '../assets/spotlight1.png'
 import spotlight2 from '../assets/spotlight2.png'
 import spotlight3 from '../assets/spotlight3.png'
 import spotlight4 from '../assets/spotlight4.png'
+import cNew from '../assets2/tech/C_Logo.png'
+import gitNew from '../assets2/tech/github-mark.svg'
+import Cpp from '../assets2/tech/cpp_logo.svg'
+import Python from '../assets2/tech/Python.svg'
+
 
 export const navLinks = [
   {
@@ -46,9 +51,18 @@ export const navLinks = [
 ];
 
 export const technologies = [
+
+  {
+    name: "Cpp",
+    icon: Cpp,
+  },
+  {
+    name: 'c',
+    icon: cNew,
+  },
   {
     name: "HTML 5",
-    icon: cpp,
+    icon: html,
   },
   {
     name: "CSS 3",
@@ -59,20 +73,12 @@ export const technologies = [
     icon: javascript,
   },
   {
-    name: "Cpp",
-    icon: cpp,
-  },
-  {
-    name: 'c',
-    icon: c,
+    name: "Tailwind CSS",
+    icon: tailwind,
   },
   {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
   },
   {
     name: "Node JS",
@@ -80,11 +86,11 @@ export const technologies = [
   },
   {
     name: "Python",
-    icon: python,
+    icon: Python,
   },
   {
     name: "git",
-    icon: git,
+    icon: gitNew,
   }
 ];
 

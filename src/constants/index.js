@@ -48,7 +48,7 @@ export const navLinks = [
 export const technologies = [
   {
     name: "HTML 5",
-    icon: html,
+    icon: cpp,
   },
   {
     name: "CSS 3",

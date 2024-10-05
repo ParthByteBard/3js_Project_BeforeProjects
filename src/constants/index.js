@@ -24,7 +24,7 @@ import spotlight4 from '../assets/spotlight4.png'
 import cNew from '../assets2/tech/C_Logo.png'
 import gitNew from '../assets2/tech/github-mark.svg'
 import Cpp from '../assets2/tech/cpp_logo.svg'
-import Python from '../assets2/tech/Python.svg'
+import Python from '../assets2/tech/python.svg'
 
 
 export const navLinks = [

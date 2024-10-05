@@ -7,7 +7,8 @@ import grid2 from '../assets/images.jpeg'
 import grid4 from '../assets/grid4.png'
 import tick from '../assets/tick.svg'
 import copy from '../assets/copy.svg'
-
+import Animation3 from '../assets2/Animation3.gif'
+import { useMediaQuery } from 'react-responsive';
 
 
 const About = () => {
@@ -22,6 +23,9 @@ const About = () => {
     }, 2000);
   };
 
+  const isSmall = useMediaQuery({ maxWidth: 440 });
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
   return (
     <section className="c-space my-20" id="about">
       <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
@@ -56,17 +60,30 @@ const About = () => {
         <div className="col-span-1 xl:row-span-4">
           <div className="grid-container flex flex-col sm:justify-start">
             <div className="rounded-3xl w-full sm:h-[450px] h-fit flex justify-center items-center">
-              <Globe
-                height={326}
-                width={326}
-                backgroundColor="rgba(0, 0, 0, 0)"
-                backgroundImageOpacity={0.5}
-                showAtmosphere
-                showGraticules
-                globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
-                bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-                labelsData={[{ lat: 40, lng: -100, text: 'Rjieka, Croatia', color: 'white', size: 15 }]}
-              />
+              {
+                isMobile ?
+                  (
+                    <div className="flex justify-center items-center w-full h-full mt-[50px]">
+                      <img src={Animation3} alt="GIF Animation" className="max-w-[70%] max-h-full rounded-xl" />
+                    </div>
+                  )
+                  :
+                  (
+                    <Globe
+                      height={326}
+                      width={326}
+                      backgroundColor="rgba(0, 0, 0, 0)"
+                      backgroundImageOpacity={0.5}
+                      showAtmosphere
+                      showGraticules
+                      globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
+                      bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
+                      labelsData={[{ lat: 40, lng: -100, text: 'Rjieka, Croatia', color: 'white', size: 15 }]}
+                    />
+                  )
+
+              }
+
             </div>
             <div >
               <p className="grid-headtext">I’m very flexible with time zone communications</p>

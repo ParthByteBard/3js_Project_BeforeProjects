@@ -173,7 +173,7 @@ const Hero = () => {
         {isMobile ? (
           // Show GIF for mobile devices
           <div className="flex justify-center items-center w-full h-full mt-[50px]">
-            <img src={Animation2} alt="GIF Animation" className="max-w-[80%] max-h-full rounded-xl" />
+            <img src={Animation2} alt="GIF Animation" className="max-w-full max-h-full rounded-xl" />
           </div>
         ) : (
           // Show 3D models for larger screens

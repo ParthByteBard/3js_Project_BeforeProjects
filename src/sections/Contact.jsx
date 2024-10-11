@@ -24,8 +24,8 @@ const Contact = () => {
     setLoading(true);
 
     emailjs.send(
-      'service_v5klt85',
-      'template_at16gtc',
+      'service_7k7q8yc',
+      'template_o16zfa4',
       {
         from_name: form.name,
         to_name: 'Parth Satvekar',
@@ -33,7 +33,7 @@ const Contact = () => {
         to_email: 'parth.satvekar.official@gmail.com',
         message: form.message,
       },
-      'qsdt0hOXCto_7PQEI',
+      'bJogshkvJIoCeVLL7',
     )
       .then(
         () => {
